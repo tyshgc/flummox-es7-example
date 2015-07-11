@@ -1,0 +1,30 @@
+.Component_QiitaIndex
+  position relative
+  top 60px
+  z-index Z_indexes[1]
+  .QiitaIndex__item
+    padding Space_sizes[4] Space_sizes[3]
+    retina-border('bottom', rgba(0,0,0,.2), after)
+    
+    .item__block
+      flexbox()
+      flex-wrap('wrap')
+      justify-content('space-between')
+      align-items('center')
+      
+    .item__thumbs
+      width 100px
+      min-width @width
+      border-radius Border_radius[1]
+      overflow hidden
+      display inline-block
+      &.no-image
+        display none
+      
+    .item__title
+      color rgba(255,255,255,.8)
+      font-weight bold
+      font-size Font_sizes[2]
+      line-height Line_heights[1]
+      margin-left Space_sizes[2]
+      

@@ -1,0 +1,29 @@
+- var page= {}
+- page.siteName = ''
+- page.titleSeparation = ''
+
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, minimal-ui")
+    meta(name="apple-mobile-web-app-capable", content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style", content="black")
+    
+    block styles
+      link(type="text/css"  href="http://fonts.googleapis.com/css?family=Roboto:300,400' rel='stylesheet" media="all")
+      link(type="text/css", rel="stylesheet", media="all", href="/styles/view.css")
+    
+    block scripts
+      //Scripts
+    
+    title
+      block html_title
+        | #{page.siteName}
+  
+  block root
+    body(role="document")
+      block body
+        block content
+        block body_scripts
+          script(type="text/javascript", src="/scripts/app.js")
