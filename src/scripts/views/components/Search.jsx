@@ -71,6 +71,6 @@ export default class Search extends React.Component {
   }
   
   setSearch(query) {
-    this.QiitaIndexListActions.setSearchQuery(query)
+    this.QiitaIndexListActions.setSearchQuery(query);
   }
 }
