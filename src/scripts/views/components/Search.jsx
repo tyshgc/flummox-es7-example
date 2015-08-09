@@ -13,7 +13,7 @@ export default class Search extends React.Component {
     
     this.state = {};
     this.text = {
-      placeholder: "Keyword..."
+      placeholder: "Keywordnnn..."
     };
     this.timer = null;
   }
